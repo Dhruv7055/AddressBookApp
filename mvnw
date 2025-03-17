@@ -84,6 +84,19 @@
 			<version>2.2.0</version>
 		</dependency>
 
+		<!--	Redis Dependency	-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- Jedis (Redis client for Java) -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>5.1.0</version>  <!-- Check for the latest version -->
+		</dependency>
+
 		<!--	Lombok dependency	-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
