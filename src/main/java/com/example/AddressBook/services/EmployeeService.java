@@ -67,7 +67,7 @@ public class EmployeeService implements IEmployeeService {
     public String delete(Long id) {
         EmployeeEntity foundUser = employeeRepository.findById(id).orElseThrow(() -> new RuntimeException("cannot find user with given id"));
 
-        employeeRepository.delete(foundUser);
+        employeeRepository.deleteById(id);
 
         return "employee deleted";
     }
